@@ -7,7 +7,7 @@ namespace econet {
 
 static const char *const TAG = "econet";
 
-static const uint32_t RECEIVE_TIMEOUT = 200;
+static const uint32_t RECEIVE_TIMEOUT = 2000;
 static const uint32_t REQUEST_DELAY = 10000;
 
 static const uint8_t DST_ADR_POS = 0;
