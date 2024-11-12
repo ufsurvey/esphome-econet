@@ -90,19 +90,19 @@ econet:
     2: ${econet_alarm_history_update_interval}
     3: ${econet_alarm_history_update_interval}
   src_address: ${wifi_module_address}
-sensor:
-  - platform: econet
-    name: "Active Alerts"
-    id: alarm_count
-    sensor_datapoint: ALRMALRT
-    request_mod: 1
-    accuracy_decimals: 0
-    icon: "mdi:alert"
-    state_class: "measurement"
-  - platform: wifi_signal
-    name: "WiFi Signal Strength"
-    id: wifi_signal_sensor
-    entity_category: "diagnostic"
+# sensor:
+#   - platform: econet
+#     name: "Active Alerts"
+#     id: alarm_count
+#     sensor_datapoint: ALRMALRT
+#     request_mod: 1
+#     accuracy_decimals: 0
+#     icon: "mdi:alert"
+#     state_class: "measurement"
+#   - platform: wifi_signal
+#     name: "WiFi Signal Strength"
+#     id: wifi_signal_sensor
+#     entity_category: "diagnostic"
 text_sensor:
   - platform: econet
     name: "Alarm 1"
